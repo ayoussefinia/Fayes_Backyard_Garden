@@ -33,6 +33,44 @@ $(".shift-right").click(function() {
   console.log("counter:::", counter);
 });
 
+$(window).resize(function() {
+  windowResize();
+});
+
+function windowResize() {
+  let windowWidth = $(window).width();
+
+  if(windowWidth < 1000) {
+    $('.change-picture').removeClass('fa-3x').addClass('fa-2x');
+  }
+
+  if(windowWidth < 750) {
+    $('.bottom-right').remove();
+    $('.bottom-left').remove();
+    let texas = $('.texas-img');
+
+    $('.texas-img').remove();
+
+    // if($('.middle-nav').length == 0 ) {
+    //   let middleNav = $('<div/>').addClass('middle-nav')
+    //   console.log(middleNav);
+    //   middleNav.insertBefore($('.secondary-nav'));
+    //   let texasImg = $('.texas-img');
+    //   let number = $('.phone');
+    //   $('.phone').remove();
+
+    //   $('.texas-img').remove();
+
+    //   $('.middle-nav').append(number);
+    //   $('.middle-nav').append(texasImg);
+    //   $('.texas-img').addClass('texas-small')
+    // }
+
+ 
+  }
+}
+
+
  $('.shift-left').click(function() {
    if(counter > 1) {
       counter--;

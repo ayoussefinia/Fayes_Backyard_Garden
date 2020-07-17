@@ -3,7 +3,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  /* background: rgb(221, 244, 252); */
+
   height: 100vh;
   font-family: 'Pangolin', cursive, Arial, Helvetica;
 }
@@ -17,7 +17,7 @@ body {
 
 .logo-img {
   width: 100px;
-  border: 3px solid darkgreen;
+  border: 1.5px solid darkgreen;
   margin-left: 1rem;
   margin-top: .5rem;
   position: absolute;
@@ -26,6 +26,7 @@ body {
 }
 
 .texas-img {
+  display: block;
   width: 70px;
   position: absolute;
   top: 0;
@@ -100,7 +101,7 @@ body {
 }
 
 .about-me {
-  margin-top: 4rem;
+  margin-top: 6rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -111,7 +112,7 @@ body {
 .about-me-header {
   text-shadow: 2px 2px #000000;
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   color: rgb(2, 92, 2);
   font-size: 3.5rem;
   font-weight: 100;
@@ -120,7 +121,7 @@ body {
 }
 
 .about-me-paragraphs {
-  width: 75%
+  width: 75%;
 }
 
 .about-me-paragraph {
@@ -157,7 +158,7 @@ body {
 
   width: 100%;
   margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -208,4 +209,179 @@ body {
 .change-picture:hover {
   cursor: pointer;
   color: rgb(2, 92, 2);
+}
+
+.middle-nav {
+  width: 100%;
+  height: 80px;
+
+  display: none;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.texas-small {
+  position: absolute;
+  right: 0;
+  margin-right: .5rem;
+}
+
+@media (max-width: 1030px) {
+  .business-header {
+    font-size: 3.0rem;
+  }
+  .image-carousel-left {
+    width: 25%;
+  }
+  .image-carousel-right {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .business-header {
+    font-size: 2rem;
+  }
+  .image-carousel {
+    width: 25%;
+  }
+  .image-carousel-left {
+    width: 25%;
+  }
+  .image-carousel-right {
+    width: 25%;
+  }
+  .top-right {
+    margin-top: 50px;
+  }
+  .bottom-right {
+    margin-bottom: 50px;
+  }
+  .top-left {
+    margin-top: 50px;
+  }
+  .bottom-left {
+    margin-bottom: 50px;
+  }
+  .trees {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 750px) { 
+  .about-me-image-2 {
+    width: 50%;
+  }
+  .about-me-image-3 {
+    display: none;
+  }
+  .secondary-nav {
+    display: none;
+  }
+  .about-me-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-div {
+    margin-top: 2.5rem;
+  }
+  .main-nav {
+    display: none;
+  }
+  .nav-link {
+    font-size: .9rem;
+    margin: .75rem;
+  }
+  .texas-img {
+    display: none;
+  }
+  .middle-nav {
+    display: flex;
+  }
+  .phone {
+    display: none;
+  }
+  .phone-small {
+    margin: 0;
+    color: rgb(2, 92, 2);
+  }
+  .trees {
+    display: none;
+  }
+  .trees-small {
+    margin: 0;
+    margin-top: .5rem;
+    color: rgb(2, 92, 2);
+  }
+  .location {
+    display: none;
+  }
+  .nav {
+    justify-content: flex-end;
+  }
+  .business-header {
+    font-size: 1.75rem;
+    margin-right: 1.5rem;
+  }
+  .bottom-left {
+    display: none;
+  }
+  .bottom-right {
+    display: none;
+  }
+
+  .texas-img-2 {
+    width: 50px;
+  }
+  .logo-img {
+    width: 75px;
+  }
+
+  .image-carousel-left {
+    display: none;
+  }
+  .image-carousel-right {
+    display: none; 
+  }
+  .image-carousel {
+    width: 60%;
+  }
+  .right-scroll-div {
+    justify-content: center;
+  }
+  .left-scroll-div {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .image-div {
+    margin: 0;
+  }
+  .business-header {
+    max-width: 250px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 450px) {
+  .texas-small {
+    width: 35px;
+  }
+
+  .image-div {
+    margin-top: 2.5rem;
+  }
+  .image-carousel {
+    width: 80%;
+  }
+  .right-scroll-div {
+    margin-left: .5rem;
+  }
+  .left-scroll-div {
+    margin-right: .5rem;
+  }
 }
