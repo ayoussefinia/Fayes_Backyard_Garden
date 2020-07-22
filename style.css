@@ -271,8 +271,22 @@ body {
 }
 
 @media (max-width: 750px) { 
+  .about-me-header {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .about-me-image-1 {
+    width: 50%;
+    align-self: flex-start;
+    margin-left: 1.5rem;
+    border-radius: 10px;
+  }
   .about-me-image-2 {
     width: 50%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    margin-right: 1.5rem;
+    align-self: flex-end;
   }
   .about-me-image-3 {
     display: none;
@@ -384,4 +398,221 @@ body {
   .left-scroll-div {
     margin-right: .5rem;
   }
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  height: 200px;
+}
+
+.footer {
+  height: 200px;
+}
+
+.content {
+  margin-top: 5rem;
+  min-height: 800px;
+  background: rgb(247,247,244);
+  font-family: Lato, Helvetica, sans-serif !important;
+}
+
+.content-headers {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgb(2, 92, 2);
+}
+
+.content-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 2% 1rem 2%; */
+}
+
+.elHeadline {
+  font-size: 2.7rem;
+  margin: 1rem 0 0 0;
+  font-weight: 500;
+  color: white;
+}
+
+.headline-caption {
+  margin: .6rem 0 0 0;
+  font-weight: 500;
+  color: white;
+}
+
+.card {
+  background: white;
+  min-width: 270px;
+  margin: 2rem 2% 0 1%;
+  border: 1.5px solid rgb(222,222,222);
+  min-height: 700px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.margin-top {
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+.number-packs-font-size {
+  font-size: 1.2rem;
+}
+
+.number-packs-font-size-small {
+  font-size: 1rem;
+}
+
+.number-packs-font-size-bold {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.number-packs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: Lato, Helvetica, sans-serif !important;
+  margin: 0;
+}
+
+.centered-radio-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.margin-top-1 {
+  margin-top: .5rem;
+}
+.margin-top-2 {
+  margin-top: 1rem;
+}
+
+
+.radio-width {
+  width: 70%;
+}
+
+.decoration {
+  text-decoration: none;
+}
+
+.color-green {
+  color: rgb(147,186,43);
+}
+
+.tree-image-div {
+  width: 100%;
+  height: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-middle {
+  box-shadow: 0 0 15px 5px rgb(222,222,222);
+  border: 1.5px solid rgb(175, 219, 255);
+  outline:  1.5px solid rgb(222,222,222);
+}
+
+.card-right {
+  border: 1.3px solid rgb(175, 219, 255);
+}
+.popular-banner {
+  background: rgb(240,164,57);
+  color: white;
+  font-family: Pangolin, Helvetica, sans-serif !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 100%;
+  font-size: .9rem;
+  font-weight: 700;
+  position: absolute;
+  top: 10%;
+  transform: rotate(-45deg) translateY(-300%) translateX(-13%);
+  transform-origin: center center;
+}
+
+.select-options {
+  height: 2rem;
+  margin-top: .25rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.choose-flavors-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.choose-flavors-link {
+  width: 80%;
+  min-height: 60px;
+  text-decoration: none;
+  background: rgb(96,54,124);
+  color: white;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  
+}
+
+.choose-flavors-link:hover {
+  cursor: pointer;
+  background: rgb(106, 59, 138);
+}
+
+.perks-image {
+  width: 93%;
+}
+
+.perks-image-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.choose-flavors-middle {
+  min-height: 70px;
+}
+
+.color-red {
+  color: red;
+}
+
+.citrus {
+  width: 260px;
+}
+
+.citrus-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
