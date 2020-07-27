@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
 
+
   height: 100vh;
   font-family: 'Pangolin', cursive, Arial, Helvetica;
 }
@@ -424,7 +425,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  text-align: center;
   background: rgb(2, 92, 2);
 }
 
@@ -434,14 +435,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  /* min-width: 989px; */
   /* padding: 0 2% 1rem 2%; */
 }
 
 .elHeadline {
   font-size: 2.7rem;
-  margin: 1rem 0 0 0;
+  margin: .5rem 0 0 0;
   font-weight: 500;
   color: white;
+}
+
+.elHeadline-1 {
+  font-size: 2.5rem;
+  margin: 1rem 0 0 0;
+  font-weight: 100;
+  color: white;
+}
+
+.elHeadline-2 {
+  font-size: 2rem;
 }
 
 .headline-caption {
@@ -455,7 +470,7 @@ body {
   min-width: 270px;
   margin: 2rem 2% 0 1%;
   border: 1.5px solid rgb(222,222,222);
-  min-height: 700px;
+  /* min-height: 700px; */
   border-radius: 2px;
   position: relative;
   overflow: hidden;
@@ -463,6 +478,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
+  padding: .5rem .75rem;
 }
 
 .margin-top {
@@ -615,4 +631,27 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background: rgb(2, 92, 2);
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#calendar {
+  width: 60%;
+}
+
+#map {
+  width: 80%;
 }

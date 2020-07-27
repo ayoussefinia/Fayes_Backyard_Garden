@@ -1,4 +1,4 @@
-console.log('connected');
+
 
 let imagesArray = [
   'https://i.imgur.com/sTORTn3.jpg', "https://i.imgur.com/NoGJmnX.jpg",'https://i.imgur.com/9QnPnP2.jpg', 'https://i.imgur.com/V0Tdml8.jpg', 'https://i.imgur.com/AEs0wQf.jpg', 'https://i.imgur.com/INT4p3B.jpg',
@@ -49,7 +49,7 @@ function windowResize() {
     $('.bottom-left').remove();
     let texas = $('.texas-img');
 
-    $('.texas-img').remove();
+ 
 
     // if($('.middle-nav').length == 0 ) {
     //   let middleNav = $('<div/>').addClass('middle-nav')
@@ -88,5 +88,11 @@ function windowResize() {
      $('.image-carousel-left').attr('src', imagesArray[counter-1]);
      $('.image-carousel-right').attr('src', imagesArray[0]);
    }
-
 });
+
+
+
+
+// var event = calendar.getEventById('a') // an event object!
+// var start = event.start // a property (a Date object)
+// console.log(start.toISOString()) // "2018-09-01T00:00:00.000Z"

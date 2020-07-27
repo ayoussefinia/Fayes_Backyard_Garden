@@ -1,0 +1,22 @@
+{
+  "name": "garden",
+  "version": "1.0.0",
+  "description": "a gardening business website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayoussefinia/Fayes_Backyard_Garden.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayoussefinia/Fayes_Backyard_Garden/issues"
+  },
+  "homepage": "https://github.com/ayoussefinia/Fayes_Backyard_Garden#readme",
+  "dependencies": {
+    "fullcalendar": "^5.1.0"
+  }
+}
