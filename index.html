@@ -45,12 +45,22 @@
       let map;
 
       function initMap() {
+        const myLatLng = {
+          lat: 29.575850,
+          lng: -98.354880
+        };
         map = new google.maps.Map(document.getElementById("map"), {
           center: {
-            lat: -34.397,
-            lng: 150.644
+            lat: 29.4241,
+            lng: -98.4936
           },
-          zoom: 8
+          zoom: 10.5
+        });
+        new google.maps.Marker({
+          position: myLatLng,
+          label: 'Sam\'s Backyard',
+          map,
+          title: "Hello World!"
         });
       }
     </script>
@@ -126,7 +136,8 @@
   <div id='logo'><img src="./Logo.png" class='logo-img' alt=""></div>
   <div id='texas-div'><img src="./Texas.jpg" class="texas-img" alt=""></div>
 
-    <div id="map"></div>
+    
+
 
   
 
@@ -143,10 +154,14 @@
     </div>
     <img src="https://i.imgur.com/9QnPnP2.jpg" class="image-carousel-right" alt="">
  </div>
+ <div class='map_container'>
+  <div id="map"></div>
+ </div>
  <div class='calendar-container'>
     <div id='calendar'>
     </div>
  </div>
+
 
  <div class='content'>
     <div class='content-headers'>
