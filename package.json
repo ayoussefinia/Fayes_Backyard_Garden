@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ayoussefinia/Fayes_Backyard_Garden#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "fullcalendar": "^5.1.0"
-  }
+  },
+  "devDependencies": {}
 }

@@ -9,6 +9,45 @@ body {
   font-family: 'Pangolin', cursive, Arial, Helvetica;
 }
 
+.calendar-header {
+  font-family: 'Pangolin', cursive, Arial, Helvetica;
+  text-shadow: 2px 2px #000000;
+  color: rgb(2, 92, 2);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.info {
+  margin-top: 50px;
+  font-family: 'Pangolin', cursive, Arial, Helvetica;
+  text-shadow: 2px 2px #000000;
+  color: rgb(2, 92, 2);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(225, 255, 225);
+}
+
+
+.info h1 {
+  margin-bottom: .5rem;
+}
+
+.info h6 {
+  text-shadow: none;
+  font-family: 'Balsamiq Sans', cursive;
+  margin: 0;
+}
+
 #Logo {
   width: 150px;
   height: 100px;
@@ -101,6 +140,30 @@ body {
   font-weight: 100;
 }
 
+.calendar-header-lessons {
+  background: rgb(209, 255, 254);
+  margin-top: 2rem;
+}
+
+.lessons {
+  color: rgb(2, 92, 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(209, 255, 254);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.lessons-width {
+  width: 75%;
+}
+
+.lessons h4 {
+  margin: .25rem;
+}
+
 .about-me {
   margin-top: 6rem;
   width: 100%;
@@ -108,6 +171,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .about-me-header {
@@ -158,7 +222,7 @@ body {
 .image-div {
 
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   margin-top: 5rem;
   box-sizing: border-box;
   display: flex;
@@ -238,7 +302,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 
 #calendar {
@@ -250,14 +314,14 @@ body {
   font-size: 2.7rem;
   margin: .5rem 0 0 0;
   font-weight: 500;
-  color: white;
+  /* color: white; */
 }
 
 .elHeadline-1 {
   font-size: 2.5rem;
   margin: 1rem 0 0 0;
   font-weight: 100;
-  color: white;
+  /* color: white; */
   margin-bottom: 1rem;
 }
 
@@ -291,7 +355,17 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: rgb(2, 92, 2);
+  background: rgb(198, 255, 240);
+  font-family: 'Pangolin', cursive, Arial, Helvetica;
+  text-shadow: 2px 2px #000000;
+  color: rgb(2, 92, 2);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%;
+  height: 80px; */
 }
 
 .content-cards {
@@ -302,6 +376,7 @@ body {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  background: rgb(198, 255, 240);
   /* min-width: 989px; */
   /* padding: 0 2% 1rem 2%; */
 }
@@ -311,7 +386,7 @@ body {
 .headline-caption {
   margin: .6rem 0 0 0;
   font-weight: 500;
-  color: white;
+  /* color: white; */
 }
 
 .card {
@@ -326,7 +401,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   padding: .5rem .75rem;
 }
 
@@ -354,6 +429,7 @@ body {
   justify-content: center;
   font-family: Lato, Helvetica, sans-serif !important;
   margin: 0;
+  font-weight: 100;
 }
 
 .centered-radio-buttons {
@@ -491,14 +567,24 @@ body {
   justify-content: center;
 }
 
+#map {
+  margin-bottom: 3rem;
+}
 
+.shadow-div {
+  height: 15px;
+  width: 100%;
+}
 
 .map_container {
   width: 100%;
-  height: 700px;
+  height: 600px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 2rem;
+  align-items: center;
+  background-color: rgb(225, 255, 225);
+  /* margin-top: 2rem; */
 }
 
 @media (max-width: 1030px) {

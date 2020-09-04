@@ -20,7 +20,7 @@
   <script src='./node_modules/fullcalendar/main.js'></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script
-    src="https://maps.googleapis.com/maps/api/js?key=88888888&callback=initMap&libraries=&v=weekly"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw4GCszLfMGGopR9CexBWHjskskOWBims&callback=initMap&libraries=&v=weekly"
     defer
   >
   </script>
@@ -49,6 +49,10 @@
           lat: 29.575850,
           lng: -98.354880
         };
+        const farmersMarketLatLng = {
+          lat: 29.588650,
+          lng: -98.451440
+        }
         map = new google.maps.Map(document.getElementById("map"), {
           center: {
             lat: 29.4241,
@@ -59,6 +63,12 @@
         new google.maps.Marker({
           position: myLatLng,
           label: 'Sam\'s Backyard',
+          map,
+          title: "Hello World!"
+        });
+        new google.maps.Marker({
+          position: farmersMarketLatLng,
+          label: 'Legacy Farmers Market',
           map,
           title: "Hello World!"
         });
@@ -73,8 +83,8 @@
         events: [
           {
             title: 'Farmers Market',
-            start: '2020-07-25T10:30:00',
-            end: '2020-07-26T11:30:00',
+            start: '2020-09-05T10:30:00',
+            end: '2020-09-05T11:30:00',
             extendedProps: {
               department: 'Farmers Market Info'
             },
@@ -85,8 +95,32 @@
           },
           {
             title: 'Farmers Market',
-            start: '2020-08-01T10:30:00',
-            end: '2020-08-02T11:30:00',
+            start: '2020-09-12T10:30:00',
+            end: '2020-09-12T11:30:00',
+            extendedProps: {
+              department: 'Farmers Market Info'
+            },
+            description: 'Farmers Market',
+            color: 'yellow',
+            textColor: 'blue',
+            display: 'block',
+          },
+          {
+            title: 'Farmers Market',
+            start: '2020-09-19T10:30:00',
+            end: '2020-09-19T11:30:00',
+            extendedProps: {
+              department: 'Farmers Market Info'
+            },
+            description: 'Farmers Market',
+            color: 'yellow',
+            textColor: 'blue',
+            display: 'block',
+          },
+          {
+            title: 'Farmers Market',
+            start: '2020-09-26T10:30:00',
+            end: '2020-09-26T11:30:00',
             extendedProps: {
               department: 'Farmers Market Info'
             },
@@ -128,7 +162,7 @@
       <h6 class="trees">Organic Trees For Sale & Much More</h6>
     </nav>
     <nav class='main-nav'>
-      <a href="" class='nav-link'>ABOUT ME</a>
+      <a href="" class='nav-link'>ABOUT US</a>
       <a href="" class='nav-link'>TREES</a>
       <a href="" class='nav-link'>CONTACT</a>
       <a href="" class='nav-link'>LESSONS</a>
@@ -154,9 +188,25 @@
     </div>
     <img src="https://i.imgur.com/9QnPnP2.jpg" class="image-carousel-right" alt="">
  </div>
+
+ <div class="info">
+  <h1>Location</h1>
+  <h6>When were not at home we can be found at a local farmers market.</h6>
+ </div>
+
+
+
  <div class='map_container'>
   <div id="map"></div>
+  <div class="shadow-div">
+
+  </div>
  </div>
+
+ <div class="calendar-header">
+   <h1>Schedule</h1>
+ </div>
+
  <div class='calendar-container'>
     <div id='calendar'>
     </div>
@@ -173,52 +223,24 @@
     <div class='content-cards'>
       <div class='card'>
         <div class='margin-top'>
-            <h1 class='number-packs'>Various Fruit/Nut</h1>
-            <p class='number-packs number-packs-font-size'>
-              Apple
-            </p>
-            <p class='number-packs number-packs-font-size'>
-                Pomegranite
-            </p>
-            <p class='number-packs number-packs-font-size'>
-                Japanese Plum
-            </p>
-            <!-- <p class='number-packs number-packs-font-size'>
-                various nuts & berries (pecan, almond)
-            </p> -->
+            <h1 class='number-packs'>Pomegranate</h1>
             <div class='tree-image-div'>
                 <img src="./pomegranite.jpg" alt="">
             </div>
             <div class='price-div'>
-              
-              <h1 class='number-packs'>$15 Small Tree</h1>
-              <h3 class='number-packs'>$25 Mid-Size Tree</h3>
-              <h3 class='number-packs'>$55 Large Tree</h3>
-              <p class='number-packs number-packs-font-size-small margin-top-1'>call for more info!</p>
-              <h2 class='number-packs color-green margin-top-1'>(210) 590-0524</h2>
+              <h1 class='number-packs'>$10 - $25</h1>
             </div>
-
-
-            
-
         </div>
       </div>
 
       <div class='card card-middle'>
           <div class='margin-top'>
-              <h1 class='number-packs'>Citrus</h1>
-              <p class='number-packs number-packs-font-size'>Lemon</p>
-              <p class='number-packs number-packs-font-size'>Sweet Lemon</p>
-              <p class='number-packs number-packs-font-size'>Orange</p>
-              <p class='number-packs number-packs-font-size'>Sour Orange</p>
+              <h1 class='number-packs'>Papaya</h1>
               <div class='citrus-div'>
                 <img class='citrus' src="citrus.jpg" alt="">
               </div>
               <div class='price-div margin-top-2'>
-                <h1 class='number-packs'>$15 Small Tree</h1>
-                <h3 class='number-packs'>$25 Mid-Size Tree</h3>
-                <h3 class='number-packs'>$55 Large Tree</h3>
-                <h2 class='number-packs color-green margin-top-1'>(210) 907-6221</h2>
+                <h1 class='number-packs'>$10 - $15</h1>
               </div>
           </div>
       </div>
@@ -226,90 +248,170 @@
       <div class='card card-right'>
           <div class='margin-top'>
               <h1 class='number-packs'> Fig Trees </h1>
-             
               <p class='number-packs number-packs-font-size'>(Common Fig)</p>
               <div class='tree-image-div'>
                   <img src="./fig.jpg" alt="">
               </div>
               <div class='price-div margin-top-1'>
-                  <h1 class='number-packs'>$18.99 per pack</h1>
-                  <p class='number-packs number-packs-font-size-bold margin-top-2'>+ FREE Shipping & Handling</p>
-                  <h2 class='number-packs color-green margin-top-1'>(210) 907-6221</h2>
+                  <h1 class='number-packs'>$10 - $25</h1>
               </div>
            </div>
       </div>
-       
       </div>
+
       <div class='content-cards'>
           <div class='card'>
             <div class='margin-top'>
-                <h1 class='number-packs'>Various Fruit/Nut</h1>
-                <p class='number-packs number-packs-font-size'>
-                  Apple
-                </p>
-                <p class='number-packs number-packs-font-size'>
-                    Pomegranite
-                </p>
-                <p class='number-packs number-packs-font-size'>
-                    Japanese Plum
-                </p>
-                <!-- <p class='number-packs number-packs-font-size'>
-                    various nuts & berries (pecan, almond)
-                </p> -->
+                <h1 class='number-packs'>Avocado</h1>
                 <div class='tree-image-div'>
                     <img src="./pomegranite.jpg" alt="">
                 </div>
-                <div class='price-div'>
-                  
-                  <h1 class='number-packs'>$15 Small Tree</h1>
-                  <h3 class='number-packs'>$25 Mid-Size Tree</h3>
-                  <h3 class='number-packs'>$55 Large Tree</h3>
-                  <p class='number-packs number-packs-font-size-small margin-top-1'>call for more info!</p>
-                  <h2 class='number-packs color-green margin-top-1'>(210) 590-0524</h2>
+                <div class='price-div'>               
+                  <h1 class='number-packs'>$7 -$25</h1>
                 </div>
-    
-    
-                
-    
             </div>
           </div>
     
           <div class='card card-middle'>
               <div class='margin-top'>
-                  <h1 class='number-packs'>Citrus</h1>
-                  <p class='number-packs number-packs-font-size'>Lemon</p>
-                  <p class='number-packs number-packs-font-size'>Sweet Lemon</p>
-                  <p class='number-packs number-packs-font-size'>Orange</p>
-                  <p class='number-packs number-packs-font-size'>Sour Orange</p>
+                  <h1 class='number-packs'>Mango</h1>
                   <div class='citrus-div'>
                     <img class='citrus' src="citrus.jpg" alt="">
                   </div>
                   <div class='price-div margin-top-2'>
-                    <h1 class='number-packs'>$15 Small Tree</h1>
-                    <h3 class='number-packs'>$25 Mid-Size Tree</h3>
-                    <h3 class='number-packs'>$55 Large Tree</h3>
-                    <h2 class='number-packs color-green margin-top-1'>(210) 907-6221</h2>
+                    <h1 class='number-packs'>$10 - $15</h1>
                   </div>
               </div>
           </div>
     
           <div class='card card-right'>
               <div class='margin-top'>
-                  <h1 class='number-packs'> Fig Trees </h1>
-                 
-                  <p class='number-packs number-packs-font-size'>(Common Fig)</p>
+                  <h1 class='number-packs'>Orange</h1>
                   <div class='tree-image-div'>
                       <img src="./fig.jpg" alt="">
                   </div>
                   <div class='price-div margin-top-1'>
-                      <h1 class='number-packs'>$18.99 per pack</h1>
-                      <p class='number-packs number-packs-font-size-bold margin-top-2'>+ FREE Shipping & Handling</p>
-                      <h2 class='number-packs color-green margin-top-1'>(210) 907-6221</h2>
+                      <h1 class='number-packs'>$10 -$25</h1>
                   </div>
                </div>
           </div>
-           
           </div>
+
+          <div class='content-cards'>
+            <div class='card'>
+              <div class='margin-top'>
+                  <h1 class='number-packs'>Lemon</h1>
+                  <div class='tree-image-div'>
+                      <img src="./pomegranite.jpg" alt="">
+                  </div>
+                  <div class='price-div'>
+                    <h1 class='number-packs'>$10 - $25</h1>
+                  </div>
+              </div>
+            </div>
+      
+            <div class='card card-middle'>
+                <div class='margin-top'>
+                    <h1 class='number-packs'>Sweet Lemon</h1>
+                    <div class='citrus-div'>
+                      <img class='citrus' src="citrus.jpg" alt="">
+                    </div>
+                    <div class='price-div margin-top-2'>
+                      <h1 class='number-packs'>$10 - $25</h1>
+                    </div>
+                </div>
+            </div>
+      
+            <div class='card card-right'>
+                <div class='margin-top'>
+                    <h1 class='number-packs'>Persian Lime</h1>
+                    <div class='tree-image-div'>
+                        <img src="./fig.jpg" alt="">
+                    </div>
+                    <div class='price-div margin-top-1'>
+                        <h1 class='number-packs'>$10 - $25</h1>
+                    </div>
+                 </div>
+            </div>
+          </div>
+
+          <div class='content-cards'>
+            <div class='card'>
+              <div class='margin-top'>
+                  <h1 class='number-packs'>Blood Orange</h1>
+                  <div class='tree-image-div'>
+                      <img src="./pomegranite.jpg" alt="">
+                  </div>
+                  <div class='price-div'>
+                    <h1 class='number-packs'>$10 - $25</h1>
+                  </div>
+              </div>
+            </div>
+      
+            <div class='card card-middle'>
+                <div class='margin-top'>
+                    <h1 class='number-packs'>Tangerine</h1>
+                    <div class='citrus-div'>
+                      <img class='citrus' src="citrus.jpg" alt="">
+                    </div>
+                    <div class='price-div margin-top-2'>
+                      <h1 class='number-packs'>$10 - $25</h1>
+                    </div>
+                </div>
+            </div>
+      
+            <div class='card card-right'>
+                <div class='margin-top'>
+                    <h1 class='number-packs'>Kumquat</h1>
+                    <div class='tree-image-div'>
+                        <img src="./fig.jpg" alt="">
+                    </div>
+                    <div class='price-div margin-top-1'>
+                        <h1 class='number-packs'>$10 - $25</h1>
+                    </div>
+                 </div>
+            </div>
+          </div>
+          <div class='content-cards'>
+            <div class='card'>
+              <div class='margin-top'>
+                  <h1 class='number-packs'>House plant</h1>
+                  <div class='tree-image-div'>
+                      <img src="./pomegranite.jpg" alt="">
+                  </div>
+                  <div class='price-div'>
+                    <h1 class='number-packs'>$10 - $25</h1>
+                  </div>
+              </div>
+            </div>
+      
+            <div class='card card-middle'>
+                <div class='margin-top'>
+                    <h1 class='number-packs'>Cactus</h1>
+                    <div class='citrus-div'>
+                      <img class='citrus' src="citrus.jpg" alt="">
+                    </div>
+                    <div class='price-div margin-top-2'>
+                      <h1 class='number-packs'>$5 - $10</h1>
+                    </div>
+                </div>
+            </div>
+      
+            <div class='card card-right'>
+                <div class='margin-top'>
+                    <h1 class='number-packs'>Multiple</h1>
+                    <p>(graphted together)</p>
+                    <div class='tree-image-div'>
+                        <img src="./fig.jpg" alt="">
+                    </div>
+                    <div class='price-div margin-top-1'>
+                        <h1 class='number-packs'>$25+</h1>
+                    </div>
+                    <h2>Call For Options/Info</h2>
+                 </div>
+            </div>
+          </div>
+
     </div>
   </div>
   
@@ -333,9 +435,24 @@
       
         <p class="about-me-paragraph">If you would like to pick up a tree, learn something particular or just tour the garden feel free to give us a call. I am always happy to have a visitor. If I don't pick up I'm probably planting something. Just leave me a message and I'll do my best to return your call as soon as possible. Thanks for reading, hope to hear from you soon!!!</p>
    </div>
-
-
  </div>
+
+ <div class="calendar-header calendar-header-lessons">
+   <h1>Lessons</h1>
+ </div>
+ <div class='lessons'>
+    <h2 class="lessons-width">I am happy to teach what I know about gardening in person. While I'm not the biggest expert in any one area, some of my specialties include:</h2>
+    <h4>Graphting (combining differnt trees into one)</h4>
+    <h4>Composting</h4>
+    <h4>Soil Mixing</h4>
+    <h4>Greenhouse Design</h4>
+    <h4>Sprouting Seeds</h4>
+    <h4>Propogation</h4>
+ </div>
+
+<div class="calendar-header">
+  <h1>Contact Us</h1>
+</div>
 
  <footer class='footer'>
 
