@@ -3,10 +3,42 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-
-
   height: 100vh;
   font-family: 'Pangolin', cursive, Arial, Helvetica;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.trees-sale-header {
+  margin-top: 6rem;
+  margin-bottom: .5rem;
+}
+
+.trees-sale-header-second {
+  margin-bottom: 4rem;
+}
+
+.font-larger {
+  font-size: 1.2rem;
+}
+
+.location-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  max-height: 175px;
+  /* min-height: 00px; */
+}
+.location-info-first {
+  margin-top: 1rem;
+}
+.location-info-second {
+  margin-top: 1rem;
 }
 
 .calendar-header {
@@ -19,8 +51,18 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80px;
+  height: 180px;
+  margin-top: 4rem;
 }
+
+.location-header {
+  margin-top: 4rem;
+}
+
+.number-packs {
+  color: rgb(0, 153, 0);
+}
+
 
 .info {
   margin-top: 50px;
@@ -33,7 +75,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80px;
+  /* height: 0px; */
   background-color: rgb(225, 255, 225);
 }
 
@@ -45,7 +87,7 @@ body {
 .info h6 {
   text-shadow: none;
   font-family: 'Balsamiq Sans', cursive;
-  margin: 0;
+  /* margin: 0; */
 }
 
 #Logo {
@@ -156,6 +198,10 @@ body {
   padding-bottom: 2rem;
 }
 
+.lessons-header {
+  margin-top: 3rem;
+}
+
 .lessons-width {
   width: 75%;
 }
@@ -172,11 +218,13 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about-me-header {
   text-shadow: 2px 2px #000000;
   margin: 0;
+  margin-top: 4rem;
   margin-bottom: 3rem;
   color: rgb(2, 92, 2);
   font-size: 3.5rem;
@@ -190,15 +238,16 @@ body {
 }
 
 .about-me-paragraph {
-  line-height: 1.5rem;
+  line-height: 2rem;
   font-family: 'Balsamiq Sans', cursive;
   color: rgb(2, 92, 2);
+  margin-bottom: 2rem;
 }
 
 .about-me-images {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .about-me-image-1 {
@@ -211,6 +260,22 @@ body {
 }
 .about-me-image-3 {
   width: 25%;
+}
+
+.contact-us-number {
+  margin: .5rem;
+}
+
+.contact-us-message{
+  font-family: 'Balsamiq Sans', cursive;
+  margin: .5rem;
+}
+
+.contact-number-div {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
 
 .trees-header {
@@ -312,7 +377,7 @@ body {
 
 .elHeadline {
   font-size: 2.7rem;
-  margin: .5rem 0 0 0;
+  /* margin: .5rem 0 0 0; */
   font-weight: 500;
   /* color: white; */
 }
@@ -350,7 +415,7 @@ body {
 }
 
 .content-headers {
-  max-height: 150px;
+  max-height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,6 +429,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
+  /* margin-bottom: 2rem; */
   /* width: 100%;
   height: 80px; */
 }
@@ -403,6 +470,7 @@ body {
   align-items: center;
   margin-bottom: 2rem;
   padding: .5rem .75rem;
+  border-radius: 10px;
 }
 
 .margin-top {
@@ -470,7 +538,7 @@ body {
 .card-middle {
   box-shadow: 0 0 15px 5px rgb(222,222,222);
   border: 1.5px solid rgb(175, 219, 255);
-  outline:  1.5px solid rgb(222,222,222);
+  /* outline:  1.5px solid rgb(222,222,222); */
 }
 
 .card-right {
