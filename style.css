@@ -203,7 +203,7 @@ img {
 }
 
 .lessons-width {
-  width: 75%;
+  width: 65%;
 }
 
 .lessons h4 {
@@ -263,7 +263,14 @@ img {
 }
 
 .contact-us-number {
+  font-size: 2rem;
+  color: rgb(2, 92, 2);
+  font-family: 'Balsamiq Sans', cursive;
   margin: .5rem;
+}
+
+.contact-header {
+  margin-bottom: .5rem;
 }
 
 .contact-us-message{
@@ -276,6 +283,135 @@ img {
   display: flex;
   width: 100%;
   align-items: center;
+}
+
+.contact-message-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-message {
+  border-radius: 10px;
+  width: 330px;
+  border: 1px solid black;
+  padding: 10px 10px;
+  font-family: 'Pangolin', cursive, Arial, Helvetica;
+  font-size: 1.2rem;
+}
+
+.first-name-input{
+ width: 330px; 
+ height: 30px;
+ border: 1px solid black;
+ border-radius: 5px;
+ padding-left: 10px;
+ padding-right: 10px;
+ font-family: 'Pangolin', cursive, Arial, Helvetica;
+ font-size: 1.2rem;
+}
+
+.last-name-input {
+  width: 330px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Pangolin', cursive, Arial, Helvetica;
+  font-size: 1.2rem;
+}
+
+.email-input {
+  width: 330px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Pangolin', cursive, Arial, Helvetica;
+  font-size: 1.2rem;
+}
+
+.send-email-button {
+  width: 80px;
+  height: 50px;
+  background: rgb(2, 92, 2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.button-error-info {
+  color: red;
+}
+
+.left-column-contact {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 450px;
+}
+
+.send-email-button:hover {
+  cursor: pointer;
+  background: white;
+  border: 1px solid rgb(2, 92, 2);
+  color: rgb(2, 92, 2);
+}
+
+.right-column-contact {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 450px;
+  align-items: center;
+}
+
+.left-row {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.right-row {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-row-text {
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-row-text {
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-first-row {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.email-div {
+  display: flex;
+}
+
+.contact-message-div {
+ display: flex; 
+ margin-top: 2rem;
+ margin-bottom: 2rem;
 }
 
 .trees-header {

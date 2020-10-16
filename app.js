@@ -90,6 +90,28 @@ function windowResize() {
    }
 });
 
+$('.send-email-button').click(function(){
+
+  let emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+
+  if($('.first-name-input').val().length == 0 || $('.last-name-input').val().length == 0 || $('.email-input').val().length == 0 || $('.contact-message').val().length == 0){
+    $('.button-error-info').text('incomplete information')
+  }
+
+  else if (emailRegExp.test($('.email-input').val()) == false) {
+    $('.button-error-info').text('invalid email')
+  }
+
+  else {
+    $('.button-error-info').text('')
+  }
+
+
+
+  // console.log(emailRegExp.test(String($('.email-input').val()))
+})
+
 
 
 
