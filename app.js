@@ -1,3 +1,6 @@
+require('dotenv').config();
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 
 let imagesArray = [
@@ -30,7 +33,7 @@ $(".shift-right").click(function() {
     $('.image-carousel-left').attr('src', imagesArray[imagesArray.length-1]);
     $('.image-carousel-right').attr('src', imagesArray[counter + 1]);
   }
-  console.log("counter:::", counter);
+  
 });
 
 $(window).resize(function() {
@@ -92,6 +95,16 @@ function windowResize() {
 
 $('.send-email-button').click(function(){
 
+  
+  const msg = {
+    firstName: $('.first-name-input').val(), // Change to your recipient
+    lastName: $('.last-name-input').val(), // Change to your verified sender
+    email: $('.email-input').val(),
+    text: $('.contact-message').val(),
+  }
+
+  
+
   let emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
 
@@ -109,12 +122,13 @@ $('.send-email-button').click(function(){
 
 
 
-  // console.log(emailRegExp.test(String($('.email-input').val()))
+
+
+  $.post( "/email", msg).done(function(res) {
+    console.log(res)
+  });
+
+
 })
 
 
-
-
-// var event = calendar.getEventById('a') // an event object!
-// var start = event.start // a property (a Date object)
-// console.log(start.toISOString()) // "2018-09-01T00:00:00.000Z"
