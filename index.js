@@ -60,5 +60,5 @@ app.post('/email', function(req, res) {
 
 
 app.listen(process.env.PORT || 5000, () => {
-  console.log(`app listening at http://localhost:3000`)
+  console.log(`app listening at http://localhost:${process.env.PORT || 5000}`)
 })
