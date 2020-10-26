@@ -59,4 +59,6 @@ app.post('/email', function(req, res) {
 })
 
 
-http.createServer(app).listen(3000);
+app.listen(3000, () => {
+  console.log(`app listening at http://localhost:3000`)
+})
