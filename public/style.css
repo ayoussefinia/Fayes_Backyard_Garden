@@ -7,6 +7,14 @@ body {
   font-family: 'Pangolin', cursive, Arial, Helvetica;
 }
 
+.fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+}
+.fc .fc-col-header-cell-cushion { /* needs to be same precedence */
+  padding-top: 5px; /* an override! */
+  padding-bottom: 5px; /* an override! */
+}
 img {
   border-radius: 5px;
 }
